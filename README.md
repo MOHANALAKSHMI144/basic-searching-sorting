@@ -28,3 +28,23 @@ Bubble sort is one of the simplest sorting algorithms, but it's also one of the 
 - After each pass through the list, the largest element "bubbles up" to the end.
 - Repeat the process for the remaining unsorted portion of the list.
 - Stop when no more swaps are needed
+-
+- START
+INPUT n, i
+Procedure BubbleSort(array)
+    n = length of array
+    Repeat
+        swapped = false
+        For i from 0 to n-2 do
+            If array[i] > array[i+1] then
+                Swap array[i] and array[i+1]
+                swapped = true
+            End If
+        End For
+        n = n - 1  
+    Until swapped = false
+End Procedure
+END
+
+
+
