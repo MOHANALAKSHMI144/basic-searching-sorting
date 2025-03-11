@@ -1,0 +1,24 @@
+Algorithm for insertion sort
+
+Start with the second element(index 1,) as the 
+first element is alredy "sorted"
+Compare the current element with the elements before it.
+Shift all larger elements one position to the right.
+Insert the current element in the poisition.
+Repeat for all elements in the list.
+
+# Insertion Sort Pseudocode
+
+function insertionSort(list):
+  for i = 1 to length(list) - 1:
+    key = list[i]
+    j = i - 1
+
+    while j >= 0 AND list[j] > key:
+      list[j + 1] = list[j]
+      j = j - 1
+
+    list[j + 1] = key
+    return list
+    
+    
